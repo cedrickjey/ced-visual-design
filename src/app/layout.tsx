@@ -24,9 +24,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Header />
-        {children}
+        <section className="min-h-screen wrapper-body">
+          {children}
+        </section>
         <Footer />
       </body>
     </html>
-  );
+  ); 
 }

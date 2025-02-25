@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-
+import "../../styles/main.css";
 
 export default function Header() {
   return (
@@ -15,7 +15,7 @@ export default function Header() {
         <nav  className="navmenu">
           <ul className="flex space-x-6">
             <li><Link href="/" className="active text-blue-500">Home</Link></li>
-            <li><Link href="/portfolio" className="hover:text-blue-500">Portfolio</Link></li>
+            <li><Link href="/projects" className="hover:text-blue-500">Portfolio</Link></li>
             <li><Link href="/about" className="hover:text-blue-500">About</Link></li>
             <li><Link href="/contact" className="hover:text-blue-500">Contact</Link></li>
           </ul>
