@@ -19,7 +19,7 @@ const Header : FC<HeaderProps> = ({ routes }) => {
 
         <Link href="/" className="logo flex items-center me-auto me-xl-0">
           <img src="assets/img/logo.png" alt="" />
-          <h1 className="sitename">Cedrick</h1>
+          <h1 className="">Cedrick</h1>
         </Link>
 
         <nav id="navmenu" className="navmenu">
