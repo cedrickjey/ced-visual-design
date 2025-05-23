@@ -19,7 +19,21 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+#--bg::before {
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    background-attachment: scroll;
+    width: 100%;
+    background-image: url(data:image/svg+xml;charset=utf8,%3C%21--%20%28c%29%20Carrd%20Inc.%20All%20rights%20reserved.%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%0A%09%3Cstyle%3E%0A%09%09path%20%7B%0A%09%09%09fill%3A%20none%3B%0A%09%09%09stroke-width%3A%201.01px%3B%0A%09%09%09stroke%3A%20%23FFFFFFB3%3B%0A%09%09%09vector-effect%3A%20non-scaling-stroke%3B%0A%09%09%7D%0A%09%3C/style%3E%0A%09%3Cpath%20d%3D%22M448%2C512c0-128-128-128-128-256S448%2C128%2C448%2C0%22%20/%3E%0A%09%3Cpath%20d%3D%22M192%2C512c0-128-128-128-128-256S192%2C128%2C192%2C0%22%20/%3E%0A%3C/svg%3E), linear-gradient(0deg, rgb(237, 235, 230) 0%, rgb(240, 245, 247) 100%);
+    background-size: 820px, auto;
+    background-position: center center, 0% 0%;
+    background-repeat: repeat, repeat;
+}
 
 /**
 * Template Name: Kelly
@@ -110,57 +124,7 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
 
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Header
