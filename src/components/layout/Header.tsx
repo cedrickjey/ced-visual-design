@@ -4,22 +4,22 @@ import "../../styles/main.css";
 
 export default function Header() {
   return (
-    <header className="header flex items-center light-background sticky top-0">
-      <div className="container mx-auto relative flex items-center justify-between w-full px-4 py-2">
+    <header className="header flex items-center dark-background sticky top-0">
+      <div className="container mx-auto relative flex items-center justify-between w-full px-4">
         <div className="">
           <Link href="/" className="flex items-center me-auto me-xl-0">
-            <Image className='rounded-full' src="/images/logo.png" width={60} height={100} alt="Logo" />
+            <Image className='rounded-full border-2 border-[#b9972f]' src="/images/logo.png" width={60} height={100} alt="Logo" />
           </Link>
         </div>
 
         <nav  className="navmenu">
           <ul className="flex space-x-6">
-            <li><Link href="/" className="active text-blue-500">Home</Link></li>
-            <li><Link href="/projects" className="hover:text-blue-500">Portfolio</Link></li>
-            <li><Link href="/about" className="hover:text-blue-500">About</Link></li>
-            <li><Link href="/contact" className="hover:text-blue-500">Contact</Link></li>
+            <li className='font-bold' ><Link href="/" className="active">Home</Link></li>
+            <li className='font-bold' ><Link href="/projects" className="">Portfolio</Link></li>
+            <li className='font-bold' ><Link href="/about" className="">About</Link></li>
+            <li className='font-bold' ><Link href="/contact" className="">Contact</Link></li>
           </ul>
-          <i className="mobile-nav-toggle xl:hidden bi bi-list"></i>
+          <i className="mobile-nav-toggle lg:hidden bi bi-list">icon</i>
         </nav>
 
         <div className="flex space-x-4">

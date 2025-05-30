@@ -5,6 +5,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* 🌑 Couleurs principales */
+  --color-background: #0A0A0A;      /* Noir profond */
+  --color-surface: #1E1E1E;         /* Gris foncé (sections secondaires) */
+  --color-text: #F5F5F5;            /* Blanc cassé / texte principal */
+  --color-muted: #888888;           /* Texte secondaire / légendes */
+
+  /* ✨ Couleurs d’accent */
+  --color-accent: #D4AF37;          /* Or métallique */
+  --color-accent-hover: #b9972f;    /* Or plus foncé pour survol */
+  --color-border: #333333;          /* Bordures subtiles */
+  --color-shadow: rgba(0, 0, 0, 0.4);
+
+  /* ✅ Statut */
+  --color-success: #228B22;         /* Vert foncé */
+  --color-error: #CC3333;           /* Rouge profond */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,9 +30,13 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  /* font-family: Arial, Helvetica, sans-serif; */
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-inter), sans-serif;
+}
+h1, h2, h3 {
+  font-family: var(--font-playfair), serif;
+  color: var(--color-accent);
 }
 
 .wrapper-body {
