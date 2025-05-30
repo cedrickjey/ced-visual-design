@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image'
 
 const HomeSreen = () => {
 
@@ -6,12 +7,15 @@ const HomeSreen = () => {
     <main className='px-20 bg-transparent'>
       <section className="bg-white w-full h-full shadow-sm">
         {/* #1 */}
-        <div className="border border-purple-600 container p-8">
+        <div className="container p-8">
           <div className="w-full flex flex-wrap">
-            <div className="w-1/3 border border-green-600  w-[270px]- h-[270px]">
-              
+            {/* Photo */}
+            <div className="w-1/3 border border-green-600  w-[270px]- h-[270px] p-1 flex justify-center items-center">
+              <div className="border rounded-full w-64 h-64">
+                <Image className='border-8 border-white rounded-full w-auto h-auto' width={200} height={200} src="/images/profile.jpeg" alt="profile" />
+               </div>
             </div>
-
+            {/* descrption */}
             <div className="w-2/3 border border-blue-500 flex justify-center">
               <div>
                 <h2 className='mt-10'>Lorem, ipsum.</h2>
