@@ -30,13 +30,13 @@ const HomeSreen = () => {
         </div>
         {/* #2 */}
         <div className=" h-auto border-y p-2">
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-3 ">
-            <CardDivider imageSrc="/icons/js.png" title='Javascript' subtitle='Frontend' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
-            <CardDivider imageSrc="/icons/react.png" title='React' subtitle='Frontend' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
-            <CardDivider imageSrc="/icons/nextjs.png" title='Nextjs' subtitle='Frontend' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
-            <CardDivider imageSrc="/icons/tailwindcss.png" title='Tailwindcss' subtitle='Frontend' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
-            <CardDivider imageSrc="/icons/wordpress.png" title='Wordpress' subtitle='CMS' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
-            <CardDivider imageSrc="/icons/nodejs.png" title='Nodejs' subtitle='Backend' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-3 py-2">
+            <CardDivider imageSrc="/icons/js.png" title='Javascript' subtitle='Frontend' description='' linkUrl='#' linkText='Visit source' />
+            <CardDivider imageSrc="/icons/react.png" title='React' subtitle='Frontend' description='' linkUrl='#' linkText='Visit source' />
+            <CardDivider imageSrc="/icons/nextjs.png" title='Nextjs' subtitle='Frontend' description='' linkUrl='#' linkText='Visit source' />
+            <CardDivider imageSrc="/icons/tailwindcss.png" title='Tailwindcss' subtitle='Frontend' description='' linkUrl='#' linkText='Visit source' />
+            <CardDivider imageSrc="/icons/wordpress.png" title='Wordpress' subtitle='CMS' description='' linkUrl='#' linkText='Visit source' />
+            <CardDivider imageSrc="/icons/nodejs.png" title='Nodejs' subtitle='Backend' description='' linkUrl='#' linkText='Visit source' />
           </div>
         </div>
       </section>
