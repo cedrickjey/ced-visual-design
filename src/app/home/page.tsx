@@ -6,19 +6,19 @@ import CardDivider from '@/components/ui/CardDivider';
 const HomeSreen = () => {
 
   return (
-    <main className='px-20 bg-transparent'>
+    <main className='w-full md:px-20 bg-transparent'>
       <section className="bg-white w-full h-full shadow-sm">
         {/* #1 */}
-        <div className="container p-8">
+        <div className="container p-8 bg-vector ">
           <div className="w-full flex flex-wrap">
             {/* Photo */}
-            <div className="w-1/3   w-[270px]- h-[270px] p-1 flex justify-center items-center">
-              <div className="border rounded-full w-64 h-64">
+            <div className="md:w-1/3   md:w-[270px]- md:h-[270px] p-1 flex justify-center items-center">
+              <div className="border rounded-full md:w-64 md:h-64">
                 <Image className='border-8 border-white rounded-full w-auto h-auto' width={200} height={200} src="/images/profile.jpeg" alt="profile" />
                </div>
             </div>
             {/* descrption */}
-            <div className="w-2/3 flex justify-center">
+            <div className="md:w-2/3 flex justify-center">
               <div>
                 <h2 className='mt-10'>Lorem, ipsum.</h2>
                 <h1 className="mt-10 text-3xl font-bold">Lorem ipsum dolor.</h1>
@@ -29,7 +29,7 @@ const HomeSreen = () => {
           </div>
         </div>
         {/* #2 */}
-        <div className=" h-auto border-y p-2">
+        <div className=" h-auto p-2 mt-5">
           <div className="grid md:grid-cols-3 grid-cols-1 gap-3 py-2">
             <CardDivider imageSrc="/icons/js.png" title='Javascript' subtitle='Frontend' description='' linkUrl='#' linkText='Visit source' />
             <CardDivider imageSrc="/icons/react.png" title='React' subtitle='Frontend' description='' linkUrl='#' linkText='Visit source' />

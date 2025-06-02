@@ -34,6 +34,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-inter), sans-serif;
 }
+
 h1, h2, h3 {
   font-family: var(--font-playfair), serif;
   color: var(--color-accent);
@@ -41,7 +42,6 @@ h1, h2, h3 {
 
 .wrapper-body {
     overflow: hidden;
-    padding: 4rem;
     content: "";
     display: block;
     height: 100%;
@@ -51,4 +51,11 @@ h1, h2, h3 {
     background-size: 820px, auto;
     background-position: center center, 0% 0%;
     background-repeat: repeat, repeat;
+}
+.bg-vector {
+background-color: #FFF;
+opacity: 0.8;
+background-image:  radial-gradient(#b9972f 1.8px, transparent 1.8px), radial-gradient(#b9972f 1.8px, #FFF 1.8px);
+background-size: 72px 72px;
+background-position: 0 0,36px 36px;
 }
