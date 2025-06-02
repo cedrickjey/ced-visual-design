@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
+import CardDivider from '@/components/ui/CardDivider';
 
 const HomeSreen = () => {
 
@@ -28,8 +29,15 @@ const HomeSreen = () => {
           </div>
         </div>
         {/* #2 */}
-        <div className=" h-auto border border-orange-600 ">
-
+        <div className=" h-auto border-y p-2">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-3 ">
+            <CardDivider imageSrc="/icons/js.png" title='Javascript' subtitle='Frontend' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
+            <CardDivider imageSrc="/icons/react.png" title='React' subtitle='Frontend' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
+            <CardDivider imageSrc="/icons/nextjs.png" title='Nextjs' subtitle='Frontend' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
+            <CardDivider imageSrc="/icons/tailwindcss.png" title='Tailwindcss' subtitle='Frontend' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
+            <CardDivider imageSrc="/icons/wordpress.png" title='Wordpress' subtitle='CMS' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
+            <CardDivider imageSrc="/icons/nodejs.png" title='Nodejs' subtitle='Backend' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptas!' linkUrl='https://github.com/cedrickjey/portfolio' linkText='Visit source' />
+          </div>
         </div>
       </section>
     </main>
