@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Image from 'next/image'
 
@@ -16,7 +17,7 @@ const HomeSreen = () => {
                </div>
             </div>
             {/* descrption */}
-            <div className="w-2/3 border border-blue-500 flex justify-center">
+            <div className="w-2/3 flex justify-center">
               <div>
                 <h2 className='mt-10'>Lorem, ipsum.</h2>
                 <h1 className="mt-10 text-3xl font-bold">Lorem ipsum dolor.</h1>
@@ -27,7 +28,7 @@ const HomeSreen = () => {
           </div>
         </div>
         {/* #2 */}
-        <div className="border border-orange-600 h-20">
+        <div className=" h-auto border border-orange-600 ">
 
         </div>
       </section>

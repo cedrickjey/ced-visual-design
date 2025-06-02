@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.css";
+import { Providers } from "@/lib/next-ui/providers";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -23,11 +24,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header />
-        <section className="min-h-screen wrapper-body">
-          {children}
-        </section>
-        <Footer />
+        <Providers>
+          <Header />
+            <section className="min-h-screen wrapper-body">
+              {children}
+            </section>
+          <Footer />
+        </Providers>
       </body>
     </html>
   ); 
