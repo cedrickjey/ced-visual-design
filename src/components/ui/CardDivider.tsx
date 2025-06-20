@@ -13,7 +13,7 @@ type CardDividerProps = {
 
 export default function CardDivider({ imageSrc, title, subtitle, description, linkUrl, linkText }: CardDividerProps) {
   return (
-    <Card className="max-w-[400px] rounded-sm">
+    <Card className=" max-w-[400px] rounded-sm">
       <CardHeader className="flex gap-3">
         <Image
           alt={`${title} logo`}
