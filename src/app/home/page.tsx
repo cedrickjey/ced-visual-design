@@ -1,9 +1,5 @@
 "use client";
 import React from 'react';
-import Image from 'next/image';
-import CardDivider from '@/components/ui/CardDivider';
-import ButtonSection from '@/components/sections/ButtonSection';
-import { skills } from "@/data/skills";
 
 const HomeSreen = () => {
 
@@ -12,66 +8,14 @@ const HomeSreen = () => {
       <section className="bg-white w-full h-full shadow-sm">
         {/* #1 */}
         <div className="container p-8">
-          <div className="w-full flex flex-wrap">
-            {/* Photo */}
-            <div className="md:w-1/3   md:w-[270px]- md:h-[270px] p-1 flex justify-center items-center">
-              <div className="border rounded-full md:w-64 md:h-64">
-                <Image
-                  className="border-8 border-white rounded-full w-auto h-auto"
-                  width={200}
-                  height={200}
-                  src="/images/profile.jpeg"
-                  alt="profile"
-                />
-              </div>
-            </div>
-            {/* descrption */}
-            <div className="md:w-2/3 flex justify-center">
-              <div>
-                <h2 className="mt-10">DEVHOPE</h2>
+          <div className="w-full">
+            {/* Title descrption */}
+            <div className="w-full flex justify-center">
+              <div className='text-center'>
                 <h1 className="mt-10 text-3xl font-bold">Lorem ipsum dolor.</h1>
                 <p className="mt-8">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 className="mt-10">DEVHOPE</h2>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* #2 */}
-        <div className=" h-auto p-2 mt-5 border-y">
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-3 py-2">
-            {skills.map((skill) => (
-              <CardDivider
-                key={skill.title}
-                imageSrc={skill.imageSrc}
-                title={skill.title}
-                subtitle={skill.subtitle}
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit.."
-                linkUrl="#"
-                linkText="Visit source"
-              />
-            ))}
-          </div>{" "}
-        </div>
-
-        {/* #3 */}
-        <div className="pb-3">
-          <div className="mt-10">
-            <div className="w-2/3 mx-auto text-center my-10">
-              <p className=" uppercase text-sm text-default-500 font-bold">
-                Skills
-              </p>
-              <h1 className="">Amet sed porta</h1>
-              <p className=" text-default-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque, voluptatibus.
-              </p>
-            </div>
-            {/* btn */}
-            <div className="flex justify-center">
-              <ButtonSection
-                title="Contact me"
-                className="bg-black text-[#D4AF37] uppercase text-sm px-10 rounded-md"
-              />
             </div>
           </div>
         </div>
