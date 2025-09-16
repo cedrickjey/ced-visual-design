@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 
 const HomeSreen = () => {
 
@@ -11,9 +11,14 @@ const HomeSreen = () => {
           <div className="w-full">
             {/* Title descrption */}
             <div className="w-full flex justify-center">
-              <div className='text-center'>
-                <h1 className="mt-10 text-3xl font-bold">Lorem ipsum dolor.</h1>
-                <p className="mt-8">Lorem ipsum dolor sit amet consectetur.</p>
+              <div className="text-center">
+                <h1 className="mt-10 text-3xl md:text-6xl font-bold">
+                  Building bridges between design and code
+                </h1>
+                <p className="mt-8">
+                 A frontend engineer at , where I craft intuitive
+                  user experiences. After hours, I build my own projects.
+                </p>
                 <h2 className="mt-10">DEVHOPE</h2>
               </div>
             </div>

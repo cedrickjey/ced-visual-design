@@ -64,7 +64,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font-family: var(--font-geist-sans), system-ui, sans-serif !important;;
 }
 
 a {
@@ -76,6 +76,7 @@ a {
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
+  font-family: var(--font-geist-sans), system-ui, sans-serif !important;
 }
 
 h1,
@@ -85,7 +86,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: var(--font-geist-sans), system-ui, sans-serif !important;
 }
 
 
