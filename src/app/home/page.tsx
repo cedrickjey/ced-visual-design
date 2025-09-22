@@ -12,7 +12,7 @@ const HomeSreen = () => {
             {/* Title descrption */}
             <div className="w-full flex justify-center">
               <div className="text-center">
-                <h1 className="mt-10 text-3xl md:text-6xl font-bold">
+                <h1 className="mt-10 text-3xl md:text-6xl font-semibold">
                   Building bridges between design and code
                 </h1>
                 <p className="mt-8">
